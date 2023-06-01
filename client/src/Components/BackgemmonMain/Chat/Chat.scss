@@ -1,0 +1,37 @@
+.participants_container {
+  max-width: 25%;
+  position: relative;
+  transition: var(--chat-toggler-transition);
+  height: 100%;
+  width: 25%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+
+  .MuiPaper-root {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    filter: invert(1);
+  }
+
+  :first-child {
+    .MuiPaper-root {
+      border-radius: 0.25rem 0.25rem 0rem 0rem !important;
+    }
+  }
+  :last-child {
+    .MuiPaper-root {
+      border-radius: 0rem 0rem 0.25rem 0.25rem !important;
+    }
+  }
+}
+
+.MuiAccordionSummary-root {
+  width: 100% !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0px !important;
+  flex-direction: column;
+}
